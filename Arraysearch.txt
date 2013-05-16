@@ -2,11 +2,19 @@
  void main()
 {
    int c, first, last, middle, n, search, array[100],tmp,i,j;
+  
+   printf("enter the number of elements:\n");
+   scanf("%d",&n);
+
    
    printf("Enter %d integers\n", n);
  
    for ( c = 0 ; c < n ; c++ )
+    {
       scanf("%d",&array[c]);
+    }
+
+
    for(i=0;i<n-1;i++)
 	     {
 	           for(j=0;j<n-i-1;j++)
@@ -19,6 +27,8 @@
 	                 }
 	           }
 	     }
+
+
   
    printf("Enter value to find\n");
    scanf("%d",&search);
