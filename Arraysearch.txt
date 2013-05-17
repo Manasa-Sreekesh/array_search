@@ -8,13 +8,13 @@
 
    
    printf("Enter %d integers\n", n);
- 
+ //inputting elements
    for ( c = 0 ; c < n ; c++ )
     {
       scanf("%d",&array[c]);
     }
 
-
+//sorting elements in ascending order
    for(i=0;i<n-1;i++)
 	     {
 	           for(j=0;j<n-i-1;j++)
@@ -32,11 +32,11 @@
   
    printf("Enter value to find\n");
    scanf("%d",&search);
- 
+ //initiating variables
    first = 0;
    last = n - 1;
    middle = (first+last)/2;
- 
+ //sorting elements using binary search
    while( first <= last )
    {
       if ( array[middle] < search )
